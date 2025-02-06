@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="Images/Movemaster-Logo-removebg-preview.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="comp-logo">
+                <img class="relogo" src="Images/Movemaster-Logo-removebg-preview.png" alt="Logo of MoveMaster">
+            </div>
+            <h1 id="logo">MoveMaster</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="soccer.html">Soccer</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+
+    
+    <div class="image-slideshow">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1" class="slide"></div>
+                <div id="slider-img-2" class="slide"></div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button" data-slide="1"></a>
+            <a href="#slider-img-2" class="button" data-slide="2"></a>
+        </div>
+    </div>
+
+    <main>
+        <div class="tile-container">
+            <div class="tile" onclick="location.href='basketball.html'">
+                <h3>Basketball</h3>
+                <p>Explore basketball skills and drills.</p>
+            </div>
+            <div class="tile" onclick="location.href='soccer.html'">
+                <h3>Soccer</h3>
+                <p>Discover soccer techniques and exercises.</p>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <h2>Welcome to MoveMaster!</h2>
+            <p>Hi there! We’re two grade 10 students who have recently discovered our passion for coding. In just six
+                months, we’ve dived into the world of CSS, HTML, and JavaScript, and we’re excited to share our very
+                first project with you: MoveMaster.</p>
+
+            <h3>What is MoveMaster?</h3>
+            <p>MoveMaster is your go-to app for mastering sports moves, one step at a time. Whether you’re a beginner
+                looking to learn the basics or an experienced athlete refining your skills, MoveMaster guides you
+                through drills and exercises designed to help you improve and excel. We break down complex moves into
+                simple, manageable steps, making it easy for anyone to progress from novice to expert.</p>
+
+            <div class="cta-section">
+                <a href="basketball.html" class="cta-button">Start Learning Now</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MoveMaster. All rights reserved.</p>
+    </footer>
+
+    <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

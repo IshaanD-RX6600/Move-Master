@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MoveMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="comp-logo">
+                <img class="relogo" src="Images/Movemaster-Logo-removebg-preview.png" alt="Logo of MoveMaster">
+            </div>
+            <h1>MoveMaster</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="auth-form">
+                <div class="textbox">
+                    <input type="text" id="username" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MoveMaster. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

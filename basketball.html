@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="comp-logo">
+                <img class="relogo" src="Images/Movemaster-Logo-removebg-preview.png" alt="Logo of MoveMaster">
+            </div>
+            <h1>Basketball Skills</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="soccer.html">Soccer</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Basketball Skills</h2>
+        <div class="skill-container">
+        <!--Shooting Tab-->
+        <div class="tile-container">
+            <div class="tile" onclick="showSkillDetails('basketball', 'shooting')">
+                <h3>Shooting</h3>
+                <p>Learn the fundamentals of shooting with proper technique and form.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!--Dribbling Tab-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'dribbling')">
+                <h3>Dribbling</h3>
+                <p>Master the art of dribbling to maneuver around opponents effectively.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+            <!--Passing Tab-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'passing')">
+                <h3>Passing</h3>
+                <p>Improve your passing accuracy and techniques for better teamwork.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+            <!--Defesnse Tab-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'defense')">
+                <h3>Defense</h3>
+                <p>Enhance your defensive skills to prevent opponents from scoring.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!--Drives Tab-->
+            <div class="tile skill-item drives" onclick = "showSkillDetails('basketball', 'drives')">
+                <h3>Drives</h3>
+                <p>Penetrating the defense by driving towards the basket while dribbling. This often involves using quick changes of direction and speed to evade defenders.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!--Layups Tab-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'layups')">
+                <h3>Layups</h3>
+                <p> A close-range shot made while moving toward the basket, often performed with one hand. Layups are essential for scoring in the paint.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!--Rebounding Tab-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'rebounding')">
+                <h3>Rebounding</h3>
+                <p>The ability to gain possession of the ball after a missed shot. Rebounding can be either offensive (recovering the ball on the attack) or defensive (recovering the ball on defense).</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!--Behind-The-Back-Dribble-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'behindthebackdribble')">
+                <h3>Behind-The-Back-Dribble</h3>
+                <p> Dribbling the ball behind the back to protect it from a defender and change direction.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!--Spin-Move-->
+            <div class="tile" onclick="showSkillDetails('basketball', 'spinmove')">
+                <h3>Spin-Move</h3>
+                <p>A maneuver where the player spins around a defender while dribbling, often used to create space for a
+                    shot or drive.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="skill-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="Skill Image">
+                <p id="modal-description"></p>
+                <div id="modal-steps">
+                    <h3 id="title-shotingform">Steps to Improve Shooting Form</h3>
+                    <h3 id="title-dribbling">Steps to Improve dribbling Form</h3>
+                    <h3 id="title-passing">Steps to Improve passing</h3>
+                    <h3 id="title-defense">Steps to Improve Shooting</h3>
+                    <h3 id="title-drives">Steps to Improve driving Form</h3>
+                    <h3 id="title-layups">Steps to Improve layups</h3>
+                    <h3 id="title-rebounding">Steps to Improve rebounding</h3>
+                    <h3 id="title-behind-the-back-dribble">Steps to Improve Behind-The-Back-Dribble</h3>
+                    <h3 id="title-spin-move">Steps to Improve Spin-Move </h3>
+
+    
+                    <ul id="steps-list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MoveMaster. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

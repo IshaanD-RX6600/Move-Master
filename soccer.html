@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveMasterr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="comp-logo">
+                <img class="relogo" src="Images/Movemaster-Logo-removebg-preview.png" alt="Logo of MoveMaster">
+            </div>
+            <h1>Soccer Skills</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Soccer Skills</h2>
+        <div class="tile-container">
+            <div class="tile" onclick="showSkillDetails('soccer', 'dribbling')">
+                <h3>Dribbling</h3>
+                <p>Learn effective dribbling techniques to keep control of the ball.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="tile" onclick="showSkillDetails('soccer', 'passing')">
+                <h3>Passing</h3>
+                <p>Improve your passing accuracy and timing for better game play.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="tile" onclick="showSkillDetails('soccer', 'shooting')">
+                <h3>Shooting</h3>
+                <p>Develop your shooting skills for scoring goals effectively.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 55%;"></div>
+                </div>
+            </div>
+            <div class="tile" onclick="showSkillDetails('soccer', 'defense')">
+                <h3>Defense</h3>
+                <p>Enhance your defensive techniques to block opponents' attacks.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MoveMaster. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
